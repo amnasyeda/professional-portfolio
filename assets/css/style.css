@@ -5,6 +5,62 @@ body {
     font-size: 18px;
     line-height: 150%;
     color: #333;
-    background: #efeee7
+    background: #404040
 
-    
+/* header code */
+header {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--header-footer-background-color);
+}
+
+header h1 {
+    padding-left: 50px;
+}
+
+header nav ul {
+    padding-right: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav ul li {
+    padding: 10px 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+header a {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--lightskyblue);
+    color: var(--lightskyblue);
+    text-decoration: none;
+}
+/* end header code */
+
+/* start body code */
+body {
+    background-color: var(--lightgray);
+    font-family:Arial, Helvetica, sans-serif
+}
+/* end body code */
+
+/* start footer code */
+footer {
+    background-color:blueviolet
+    color:cornflowerblue
+}
+
+footer a {
+    color:darkblue
+    font-size: 1.5vw; 
+    font-weight: bold;
+    border-bottom: 2px solid var(--lightskyblue);
+    text-decoration: none;
+}
+/* end footer code */
