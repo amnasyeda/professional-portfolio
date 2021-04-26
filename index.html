@@ -18,10 +18,10 @@
         <nav>
             <ul class="nav-effects">
                 <li>
-                    <a href="#short-bio">Short Bio</a>
+                    <a href="#about-me">About Me</a>
                 </li>
                 <li>
-                    <a href="#projects">Projects</a>
+                    <a href="#work">Work</a>
                 </li>
                 <li>
                     <a href="#contact-me">Contact Me</a>
@@ -41,9 +41,9 @@
 
 <!-- short bio starts -->
 <section>
-    <div class="short-bio">
-      <div id="short-bio" class="short-bio-wrapper">
-          <p>Short Bio</p>
+    <div class="about-me">
+      <div id="about-me" class="about-me-wrapper">
+          <p>About Me</p>
         </div>
         <div class="short-bio">
             <p>something about me which i'll edit later.</p>
@@ -55,37 +55,53 @@
 
 <!-- projects start -->
 <section>
-    <div class="projects">
-      <div id="projects" class="projects-wrapper">
-          <p>Projects</p>
+    <div class="Work">
+      <div id="Work" class="work-wrapper">
+          <p>Work</p>
           </div>   
-        <div onclick="projectClicked('run-buddy')" alt="Run Buddy Image"
-            title="Run Buddy Page" target="_blank" style="cursor: pointer;"
-            class="run-buddy">
-            <h3>Run Buddy</h3>
+        <div onclick="projectClicked('run-buddy')" alt="Run Buddy Image" class="run-buddy"
+            title="Run Buddy Page" target="_blank" style="cursor: pointer;">
+                <h3>Run Buddy</h3>
         <span class="background">
-        <span class-"lower-text">HTML/CSS Basics</span>
+        <span class="lower-text">HTML/CSS Basics</span>
         </span>
     </div>
 
-    <div onclick="projectClicked('code-refactor')" alt="Horiseon Page Image"
-         title="code-refactor" style="cursor; pointer;"
-         class="code-refactor">
-         <h3>Code Refactor</h3>
+    <div onclick="projectClicked('code-refactor')" alt="Horiseon Page Image" class="code-refactor"
+         title="code-refactor" style="cursor; pointer;">
+             <h3>Horiseon Web Page</h3>
          <span class="background">
          <span class="lower-text">HTML/CSS</span>
          </span>
     </div>
 
+    <div onclick="projectClicked('robot-gladiators')" alt="Robot Gladiators Image" class="robot-gladiators"
+        title="robot-gladiators" style="cursor: pointer;">
+            <h3>Robot Gladiators</h3>
+        <span class="background">
+            <span class="lower-text">HTML/CSS/Javascript</span>
+            </span>
+  </div>
+
+    <div class="password-generator">
+        <span class="span-background">
+            <h3>Password Generator: Coming Soon!</h3>
+            <span class="lower-text">HTML/CSS/Javascript</span>
+        </span>
+    </div>
+</div>
+</div>
 
 </section>
+
 <!-- end projects-->
     
 <!-- footer -->
 <footer>
-  <div class="footer">
+  <div class="footer-container">
     <div id="contact-me" class="footer-wrapper">
-        <p>Contact Me</p>
+    <div class="footer-grid-item contact-me">
+        <h3>Contact Me</h3>
     </div>
             <li><strong>Email:</strong> <a href="#">myemail@gmail.com</a></li>
             <li><strong>Github:</strong> <a href="#">my Github username</a></li>
@@ -95,5 +111,5 @@
     </div>
 </div>
 </footer>
-
+<!-- end footer -->
 
