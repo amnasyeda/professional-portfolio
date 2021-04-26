@@ -1,13 +1,18 @@
-body {
-    padding: 0;
+* {
     margin: 0;
-    font-family:Georgia, 'Times New Roman', Times, serif
-    font-size: 18px;
-    line-height: 150%;
-    color: #333;
-    background: #404040
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* header code */
+:root {
+    --rgba-border-color-opacity: rgba(135, 206, 250, 0.8);
+    --about-me-work-border: #333366;
+    --lightskyblue: lightskyblue;
+    --lightgray: lightgray;
+    --header-footer-background-color: #404040;
+  }
+
+/* header start */
 header {
     display: flex; 
     flex-wrap: wrap;
@@ -21,16 +26,17 @@ header h1 {
 
 header nav ul {
     padding-right: 0px;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    align-items: center;
 }
 
 header nav ul li {
     padding: 10px 20px;
     margin-top: 5px;
     margin-bottom: 10px;
+    font-size: x-large
 }
 
 header a {
@@ -41,26 +47,97 @@ header a {
     color: var(--lightskyblue);
     text-decoration: none;
 }
-/* end header code */
+/* end header*/
 
-/* start body code */
+/* start body */
 body {
-    background-color: var(--lightgray);
     font-family:Arial, Helvetica, sans-serif
+    background-color: var(--lightgray);
 }
-/* end body code */
+/* end body */
 
-/* start footer code */
+/* start footer */
 footer {
     background-color:blueviolet
-    color:cornflowerblue
+    color: (var(--lightskyblue);
 }
 
 footer a {
-    color:darkblue
-    font-size: 1.5vw; 
+    color: var(--lightskyblue);
+    font-size: large; 
     font-weight: bold;
     border-bottom: 2px solid var(--lightskyblue);
     text-decoration: none;
 }
-/* end footer code */
+/* end footer */
+
+/* start hero section */
+.hero {
+    background-image: ;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 300px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-size: cover;
+    background-position: 100%;
+    background-attachment: fixed;
+}
+
+.hero-subtitle {
+    padding-bottom: 15px;
+    padding-right: 15px;
+}
+/* end hero section */ 
+
+/* start nav hover */
+.nav-effects a:hover{
+    text-shadow: 0px 20px var(--lightskyblue);
+    color: var(--lightskyblue);
+    font-weight: bold;
+}
+/* end nav hover */
+
+/* projects hover */
+.work-grid-container div:hover{
+    mix-blend-mode:soft-light;
+}
+/* end projects hover */
+
+/* footer hover */
+.footer-container a:hover {
+    color: var(--lightskyblue);
+    text-shadow: 0px 20px var(--lightskyblue);
+    font-weight: bold;
+}
+/* end footer hover */
+
+/* start flex/css code for about me */
+.about-me-wrapper {
+    display: flex;
+    flex-wrap:wrap;
+    margin-top: 50px;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.about-me-grid-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr repear(3, 2fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.about-me-title {
+    font-size: 40px;
+    padding-top: 0px;
+    padding-right: 10px;
+    grid-row: 1 / span 4;
+    text-align: right;
+    border-right: 2px solid var(--about-me-work-border);   
+}
+/* end code for about me */
