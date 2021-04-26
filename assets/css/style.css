@@ -141,3 +141,89 @@ footer a {
     border-right: 2px solid var(--about-me-work-border);   
 }
 /* end code for about me */
+
+/* start css/flex for projects */
+.work-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.work-grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 2fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 10px;
+}
+
+.work-title {
+    padding-top: 10px;
+    padding-right: 10px;
+    font-size: 35px;
+    text-align: right;
+    border-right: 2px solid var(--about-me-work-border);
+}
+
+.work-item-project.run-buddy {
+    background-image: ADD;
+    background-size: cover;
+    border: .25vw solid var(--rgba-border-color-opacity);
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 6;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 0px;
+    padding-bottom: 20px;
+    text-align: left;
+    
+}
+
+.work-item-project.code-refactor {
+    background-image: ADD;
+    background-size: cover;
+    border: .25vw solid var(--rgba-border-color-opacity);
+    grid-column: 3 / span 2;
+    grid-row: 7 / span 2;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 0px;
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+.work-item-project.robot-gladiators {
+    background-image: ADD;
+    background-size: cover;
+    border: .25vw solid var(--rgba-border-color-opacity);
+    grid-column: 2 / span 2;
+    grid-row: 7 / span 4;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 0px;
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+.work-item-project.password-generator {
+    grid-column: 4 / span 2;
+    opacity: 0;
+}
+/* end css/flex for projects */
+
+/* start span code */
+.span-background {
+    background-color: var(--lightskyblue);
+    position: relative;
+    padding-left: 8px;
+    padding-right: 8px;
+    line-height: 1.5;
+}
+
+.span-background.title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
