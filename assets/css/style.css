@@ -284,4 +284,23 @@ footer a {
 }
 /* end css/flex footer */
 
+/* media query for smaller desktop screens */
+@media screen and (max-width: 980px) {
+    header h1 a {
+    color: tomato;
+    }
+}
+/* end */
 
+/* media query for tablets */
+@media screen and (max-width: 768px) {
+    header h1 {
+    }
+}
+/* end */
+
+/* media query for smart phones */
+@media screen and (max-width: 575px) {
+    header h1 {
+    }
+}
