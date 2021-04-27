@@ -18,6 +18,9 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: var(--header-footer-background-color);
+    position: webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 header h1 {
@@ -83,7 +86,7 @@ footer a {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     background-size: cover;
-    background-position: 100%;
+    background-position: center;
     background-attachment: fixed;
 }
 
@@ -91,6 +94,17 @@ footer a {
     padding-bottom: 15px;
     padding-right: 15px;
 }
+.hero-subtitle {
+    padding-right: 35px;
+  }
+
+  .span-background.opacity{
+    font-size: 30px;
+  }
+
+  .hero {
+  background-attachment: scroll;
+  }
 /* end hero section */ 
 
 /* start nav hover */
@@ -290,6 +304,12 @@ footer a {
     color: tomato;
     }
 }
+
+.about-me-grid.container {
+    grid-template-columns:repeat(3, 3fr);
+    grid-template-rows: repeat (5, 2fr);
+    gap: 5px;
+}
 /* end */
 
 /* media query for tablets */
@@ -305,4 +325,58 @@ footer a {
     }
 }
 
-2.3.8
+/* about me section */
+.about-me.about-me-title {
+    text-align: center;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    font-size: 30px;
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 1;
+    border-right: none;
+    border-bottom: 2px solid var(--about-me-work-border);
+}
+/* end about me */
+
+/* start footer grid  */
+.footer-wrapper {
+    margin-top: 20px;
+}
+
+.footer-grid-item.contact-me {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 25px;
+    font-size: 25px;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+    text-align: center;
+    border-right: none;
+    border-bottom: 2px solid var(--lightskyblue);
+}
+
+.footer-grid-item.email {
+    padding-left: 25px;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    align-self: center;
+}
+.footer-grid-item.github {
+    padding-left: 25px;
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 2;
+    align-self: center;
+}
+
+.footer-grid-item.linkedin {
+    padding-left: 80px;
+    width: 20px;
+    grid-column: 3 / span 1;
+    grid-row: 2 span / 2;
+    align-self: center;
+
+}
+/* end footer grid */
+
