@@ -226,4 +226,62 @@ footer a {
     margin-top: 10px;
     margin-bottom: 20px;
 }
+/* end span code */
+
+/* start css/flex footer */
+.footer-wrapper {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-container {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr repear (4, 2fr);
+    grid-template-rows: repeat(3,2fr);
+    gap: 20px;
+}
+
+.footer-grid-item {
+    text-align: center;
+}
+
+.footer.grid.item.contact-me {
+    text-align: center;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    border-right: none;
+    border-bottom: 2px solid var(--lightskyblue);
+    padding-left: 25px;
+    font-size: 25px;
+    grid-column: 2 / span 3;
+    grid-row: 1 / span 1;
+}
+
+.footer-grid-item.email {
+    padding-left: 15px;
+    align-self: center;
+    grid-column 1 / span 1;
+    grid-row 2 / span 2;
+}
+
+.footer-grid-item.github {
+    padding-left: 25px;
+    align-self: center;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 2;
+}
+
+.footer-grid-item.linkedin {
+    padding-left: 90px;
+    width: 20px;
+    align-self: center;
+    grid-column: 3 / span 2;
+    grid-row: 2 / spam 2;
+}
+/* end css/flex footer */
+
 
