@@ -18,6 +18,9 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: var(--header-footer-background-color);
+    position: webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 header h1 {
@@ -83,7 +86,7 @@ footer a {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     background-size: cover;
-    background-position: 100%;
+    background-position: center;
     background-attachment: fixed;
 }
 
@@ -91,6 +94,17 @@ footer a {
     padding-bottom: 15px;
     padding-right: 15px;
 }
+.hero-subtitle {
+    padding-right: 35px;
+  }
+
+  .span-background.opacity{
+    font-size: 30px;
+  }
+
+  .hero {
+  background-attachment: scroll;
+  }
 /* end hero section */ 
 
 /* start nav hover */
@@ -141,3 +155,228 @@ footer a {
     border-right: 2px solid var(--about-me-work-border);   
 }
 /* end code for about me */
+
+/* start css/flex for projects */
+.work-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.work-grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 2fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 10px;
+}
+
+.work-title {
+    padding-top: 10px;
+    padding-right: 10px;
+    font-size: 35px;
+    text-align: right;
+    border-right: 2px solid var(--about-me-work-border);
+}
+
+.work-item-project.run-buddy {
+    background-image: ADD;
+    background-size: cover;
+    border: .25vw solid var(--rgba-border-color-opacity);
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 6;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 0px;
+    padding-bottom: 20px;
+    text-align: left;
+    
+}
+
+.work-item-project.code-refactor {
+    background-image: ADD;
+    background-size: cover;
+    border: .25vw solid var(--rgba-border-color-opacity);
+    grid-column: 3 / span 2;
+    grid-row: 7 / span 2;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 0px;
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+.work-item-project.robot-gladiators {
+    background-image: ADD;
+    background-size: cover;
+    border: .25vw solid var(--rgba-border-color-opacity);
+    grid-column: 2 / span 2;
+    grid-row: 7 / span 4;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 0px;
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+.work-item-project.password-generator {
+    grid-column: 4 / span 2;
+    opacity: 0;
+}
+/* end css/flex for projects */
+
+/* start span code */
+.span-background {
+    background-color: var(--lightskyblue);
+    position: relative;
+    padding-left: 8px;
+    padding-right: 8px;
+    line-height: 1.5;
+}
+
+.span-background.title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+/* end span code */
+
+/* start css/flex footer */
+.footer-wrapper {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-container {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr repear (4, 2fr);
+    grid-template-rows: repeat(3,2fr);
+    gap: 20px;
+}
+
+.footer-grid-item {
+    text-align: center;
+}
+
+.footer.grid.item.contact-me {
+    text-align: center;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    border-right: none;
+    border-bottom: 2px solid var(--lightskyblue);
+    padding-left: 25px;
+    font-size: 25px;
+    grid-column: 2 / span 3;
+    grid-row: 1 / span 1;
+}
+
+.footer-grid-item.email {
+    padding-left: 15px;
+    align-self: center;
+    grid-column 1 / span 1;
+    grid-row 2 / span 2;
+}
+
+.footer-grid-item.github {
+    padding-left: 25px;
+    align-self: center;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 2;
+}
+
+.footer-grid-item.linkedin {
+    padding-left: 90px;
+    width: 20px;
+    align-self: center;
+    grid-column: 3 / span 2;
+    grid-row: 2 / spam 2;
+}
+/* end css/flex footer */
+
+/* media query for smaller desktop screens */
+@media screen and (max-width: 980px) {
+    header h1 a {
+    color: tomato;
+    }
+}
+
+.about-me-grid.container {
+    grid-template-columns:repeat(3, 3fr);
+    grid-template-rows: repeat (5, 2fr);
+    gap: 5px;
+}
+/* end */
+
+/* media query for tablets */
+@media screen and (max-width: 768px) {
+    header h1 {
+    }
+}
+/* end */
+
+/* media query for smart phones */
+@media screen and (max-width: 575px) {
+    header h1 {
+    }
+}
+
+/* about me section */
+.about-me.about-me-title {
+    text-align: center;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    font-size: 30px;
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 1;
+    border-right: none;
+    border-bottom: 2px solid var(--about-me-work-border);
+}
+/* end about me */
+
+/* start footer grid  */
+.footer-wrapper {
+    margin-top: 20px;
+}
+
+.footer-grid-item.contact-me {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 25px;
+    font-size: 25px;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+    text-align: center;
+    border-right: none;
+    border-bottom: 2px solid var(--lightskyblue);
+}
+
+.footer-grid-item.email {
+    padding-left: 25px;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    align-self: center;
+}
+.footer-grid-item.github {
+    padding-left: 25px;
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 2;
+    align-self: center;
+}
+
+.footer-grid-item.linkedin {
+    padding-left: 80px;
+    width: 20px;
+    grid-column: 3 / span 1;
+    grid-row: 2 span / 2;
+    align-self: center;
+
+}
+/* end footer grid */
+
