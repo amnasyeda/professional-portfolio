@@ -1,25 +1,17 @@
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    padding: 0;
 }
-
-:root {
-    --rgba-border-color-opacity: rgba(135, 206, 250, 0.8);
-    --about-me-work-border: #333366;
-    --lightskyblue: lightskyblue;
-    --lightgray: lightgray;
-    --header-footer-background-color: #404040;
-  }
 
 /* header start */
 header {
     display: flex; 
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: var(--header-footer-background-color);
-    position: webkit-sticky;
+    background-color: grey;
     position: sticky;
+    list-style: none;
     top: 0;
 }
 
@@ -33,58 +25,59 @@ header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    list-style: none;
 }
 
 header nav ul li {
     padding: 10px 20px;
     margin-top: 5px;
     margin-bottom: 10px;
-    font-size: x-large
+    font-size: x-large;
 }
 
 header a {
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 5px;
-    border-bottom: 2px solid var(--lightskyblue);
-    color: var(--lightskyblue);
-    text-decoration: none;
+    padding-bottom: 8px;
+    border-bottom: 5px;
+    color: lightskyblue;
+    list-style: none;
 }
 /* end header*/
 
 /* start body */
 body {
-    font-family:Arial, Helvetica, sans-serif
-    background-color: var(--lightgray);
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: lightgray;
 }
 /* end body */
 
 /* start footer */
 footer {
-    background-color:blueviolet
-    color: (var(--lightskyblue);
+    background-color: lightslategrey;
+    color: lightskyblue;
 }
 
 footer a {
-    color: var(--lightskyblue);
-    font-size: large; 
+    color: lightskyblue;
+    font-size: x-large; 
     font-weight: bold;
-    border-bottom: 2px solid var(--lightskyblue);
+    border-bottom: 2px;
     text-decoration: none;
 }
 /* end footer */
 
 /* start hero section */
 .hero {
-    background-image: ;
+    background-image: url(../images/background-image.jpg);
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-end;
     justify-content: flex-end;
     height: 300px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 25px 25px;
+    border-bottom-right-radius: 25px 25px;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -109,8 +102,8 @@ footer a {
 
 /* start nav hover */
 .nav-effects a:hover{
-    text-shadow: 0px 20px var(--lightskyblue);
-    color: var(--lightskyblue);
+    text-shadow: 0px 20px;
+    color: lightskyblue;
     font-weight: bold;
 }
 /* end nav hover */
@@ -123,8 +116,8 @@ footer a {
 
 /* footer hover */
 .footer-container a:hover {
-    color: var(--lightskyblue);
-    text-shadow: 0px 20px var(--lightskyblue);
+    color: lightskyblue;
+    text-shadow: 0px 20px;
     font-weight: bold;
 }
 /* end footer hover */
@@ -134,11 +127,14 @@ footer a {
     display: flex;
     flex-wrap:wrap;
     margin-top: 50px;
-    justify-content: space-between;
     justify-content: center;
+    align-items: center;
 }
 
 .about-me-grid-container {
+    flex-wrap: 3.75%
+    padding: 20px;
+    font-size: 30px;
     display: grid;
     width: 100%;
     grid-template-columns: 1fr repear(3, 2fr);
@@ -147,12 +143,12 @@ footer a {
 }
 
 .about-me-title {
-    font-size: 40px;
-    padding-top: 0px;
-    padding-right: 10px;
+    font-size: 35px;
+    padding: 20px;
+    flex-wrap: 2 75%;
     grid-row: 1 / span 4;
-    text-align: right;
-    border-right: 2px solid var(--about-me-work-border);   
+    text-align: center;
+    border-left: 2px;   
 }
 /* end code for about me */
 
@@ -178,13 +174,13 @@ footer a {
     padding-right: 10px;
     font-size: 35px;
     text-align: right;
-    border-right: 2px solid var(--about-me-work-border);
+    border-right: 2px;
 }
 
-.work-item-project.run-buddy {
+.work.run-buddy {
     background-image: ADD;
     background-size: cover;
-    border: .25vw solid var(--rgba-border-color-opacity);
+    border: .25vw;
     grid-column: 2 / span 1;
     grid-row: 1 / span 6;
     display: flex;
@@ -195,10 +191,10 @@ footer a {
     
 }
 
-.work-item-project.code-refactor {
+.work.code-refactor {
     background-image: ADD;
     background-size: cover;
-    border: .25vw solid var(--rgba-border-color-opacity);
+    border: .25vw;
     grid-column: 3 / span 2;
     grid-row: 7 / span 2;
     display: flex;
@@ -208,10 +204,10 @@ footer a {
     text-align: left;
 }
 
-.work-item-project.robot-gladiators {
+.work.robot-gladiators {
     background-image: ADD;
     background-size: cover;
-    border: .25vw solid var(--rgba-border-color-opacity);
+    border: .25vw;
     grid-column: 2 / span 2;
     grid-row: 7 / span 4;
     display: flex;
@@ -221,7 +217,7 @@ footer a {
     text-align: left;
 }
 
-.work-item-project.password-generator {
+.work.password-generator {
     grid-column: 4 / span 2;
     opacity: 0;
 }
@@ -229,7 +225,7 @@ footer a {
 
 /* start span code */
 .span-background {
-    background-color: var(--lightskyblue);
+    background-color: lightskyblue;
     position: relative;
     padding-left: 8px;
     padding-right: 8px;
@@ -268,7 +264,7 @@ footer a {
     padding-bottom: 0px;
     padding-top: 0px;
     border-right: none;
-    border-bottom: 2px solid var(--lightskyblue);
+    border-bottom: 2px;
     padding-left: 25px;
     font-size: 25px;
     grid-column: 2 / span 3;
@@ -335,7 +331,7 @@ footer a {
     grid-column: 1 / span 3;
     grid-row: 2 / span 1;
     border-right: none;
-    border-bottom: 2px solid var(--about-me-work-border);
+    border-bottom: 2px;
 }
 /* end about me */
 
@@ -354,7 +350,7 @@ footer a {
     grid-row: 1 / span 1;
     text-align: center;
     border-right: none;
-    border-bottom: 2px solid var(--lightskyblue);
+    border-bottom: 2px;
 }
 
 .footer-grid-item.email {
