@@ -113,7 +113,7 @@ footer a {
 /* footer hover */
 .footer-container a:hover {
     color: lightskyblue;
-    text-shadow: 0px 20px var(--lightskyblue);
+    text-shadow: 0px 0px 20px var(--lightskyblue);
     font-weight: bold;
 }
 /* end footer hover */
@@ -139,7 +139,7 @@ footer a {
     font-size: 35px;
     padding-top: 0px;
     padding-right: 10px;
-    grid-row: 1 / span 4;
+    grid-row: 1 / span 9;
     text-align: right;
     border-right: 2px solid var(--about-me-work-border);
 }
@@ -149,8 +149,17 @@ footer a {
     grid-column: 2 / span 3;
     grid-row: 1 / span 2;
     white-space: normal;
+    margin-bottom: -90px;
 }
 
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    margin-bottom: -50px;
+}
 /* end code for about me */
 
 /* start css/flex for projects */
@@ -171,12 +180,13 @@ footer a {
 }
 
 .work-title {
-    padding-top: 10px;
+    padding-top: 0px;
     padding-right: 10px;
     font-size: 35px;
     text-align: right;
     border-right: 2px solid var(--about-me-work-border);
     grid-row: 1 / span 9;
+    padding-top: 0px;
 }
 
 .run-buddy {
@@ -282,6 +292,7 @@ footer a {
 /* start css/flex footer */
 .footer-wrapper {
     margin-top: 50px;
+    margin-bottom: -100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -291,12 +302,13 @@ footer a {
     display: grid;
     width: 80%;
     grid-template-columns: 1fr repeat(3, 2fr);
-    grid-template-rows: repeat(3,2fr);
-    gap: 20px 20px;
+    grid-template-rows: repeat(3, 2fr);
+    gap: -25px -25px;
 }
 
 .footer-grid {
     text-align: center;
+    min-height: calc (50vh - 50px);
 }
 
 .footer-grid.contact-me {
@@ -552,7 +564,7 @@ footer a {
         font-size: 4vw;
     }
 
-    .footer-grid-item.github {
+    .footer-grid-item.linkedin {
         padding-left: 40px;
     }
 }
