@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --about-me-work-border: #333366;
+    --lightskyblue: lightskyblue;
+}
+
 /* header start */
 header {
     display: flex; 
@@ -15,7 +20,7 @@ header {
 }
 
 header h1 {
-    padding-left: 50px;
+    padding-left: 0px;
 }
 
 header nav ul {
@@ -37,10 +42,10 @@ header nav ul li {
 }
 
 header a {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 10x;
+    padding-right: 20px;
     padding-bottom: 5px;
-    border-bottom: 2px; 
+    border-bottom: 2px;
     color: lightskyblue;
 }
 /* end header*/
@@ -48,7 +53,7 @@ header a {
 /* start body */
 body {
     font-family: serif;
-    background-color: rgb(213, 216, 233);
+    background-color: rgb(212, 212, 202);
 }
 /* end body */
 
@@ -60,7 +65,7 @@ footer {
 
 footer a {
     color: lightskyblue;
-    font-size: 1.8vw; 
+    font-size: large; 
     font-weight: bold;
     border-bottom: 2px;
     text-underline-offset: 8px;
@@ -76,21 +81,18 @@ footer a {
     align-items: flex-end;
     justify-content: flex-end;
     height: 300px;
-    border-bottom-left-radius: 30px 30px;
-    border-bottom-right-radius: 30px 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
 .hero-message {
-    padding-bottom: 15px;
-    padding-right: 15px;
+    padding-bottom: 20px;
+    padding-right: 20px;
 }
 
-.span-background.opacity {
-  background-attachment: scroll;
-  }
 /* end hero section */ 
 
 /* start nav hover */
@@ -116,47 +118,45 @@ footer a {
 /* end footer hover */
 
 /* start flex/css code for about me */
-.about-me-wrapper {
+.about-wrapper {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 50px;  
+    margin-top: 60px;  
     justify-content: space-between;
     justify-content: center;
 }
 
 .about-grid-container {
-    width: 80%;
+    width: 90%;
     display: grid;
     grid-template-columns: 1fr repeat(3, 2fr);
     grid-template-rows: repeat(4, 1fr);
-    gap: 10px 10px;
+    gap: 5px;
 }
 
-.about-item.about-me {
+.about-item.about-title {
     font-size: 35px;
     padding-top: 0px;
     padding-right: 10px;
-    grid-row: 1 / span 4;
-    text-align: right;
-    border-right: 2px;
-}
-
-:root {
-    --about-me-work-border: #333366;
+    grid-row: 1 / span 3;
+    text-align: left;
+    border-right: 2px solid var(--about-me-work-border);
 }
 
 .about-item.words {
-    padding-left: 10px;
+    padding-left: 15px;
     grid-column: 2 / span 3;
     grid-row: 1 / span 2;
+    white-space: normal;
 }
+
 /* end code for about me */
 
 /* start css/flex for projects */
-.work-wrapper{
+.work-wrapper {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: 55px;
     justify-content: space-between;
     justify-content: center;
 }
@@ -165,72 +165,93 @@ footer a {
     width: 80%;
     display: grid;
     grid-template-columns: 1fr repeat(3, 2fr);
-    grid-template-rows: repeat(10, 1fr);
-    gap: 10px 10px;
+    grid-template-rows: repeat(10, 1r);
+    gap: 10px;
 }
 
-.work-item.work {
-    padding-top: 10px;
+.work-title {
+    padding-top: 0px;
     padding-right: 10px;
     font-size: 35px;
     text-align: right;
-    border-right: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-right: 2px solid var(--about-me-work-border);
     grid-row: 1 / span 9;
 }
 
-.work-item-project.run-buddy {
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 6;
-    background-image: url("assets/images/run-buddy.png");
+.run-buddy {
+    background-image: url(../images/run-buddy.png);
     background-size: cover;
-    border: .25vw;
+    border: 0.25vw;
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-end;
     padding-left: 0px;
     padding-bottom: 15px;
     text-align: left;
-    border: .25vw  
+    border: 0.25vw; 
+    float: top;
+    width: 300px;
+    height: 100px;
+    object-fit: cover; 
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 5;
 }
 
-.work-item-project.code-refactor {
-    background-image: url("assets/images/code-refactor.png");
+.code-refactor {
+    background-image: url(../images/code-refactor.png);
     background-size: cover;
     border: .25vw;
     grid-column: 3 / span 2;
-    grid-row: 7 / span 2;
+    grid-row: 6 / span 1;
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-end;
     padding-left: 0px;
     padding-bottom: 15px;
     text-align: left;
+    float: top;
+    width: 300px;
+    height: 100px;
+    object-fit: cover; 
 }
 
-.work-item-project.robot-gladiators {
-    grid-column: 2 / span 2;
-    grid-row: 7 / span 4;
-    background-image: url("assets/images/robot-gladiators.jpg");
+.robot-gladiators {
+    background-image: url(../images/robot-gladiators.jpg);
     background-size: cover;
     border: .25vw;
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-end;
     padding-left: 0px;
     padding-bottom: 15px;
     text-align: left;
+    float: top;
+    width: 300px;
+    height: 100px;
+    object-fit: cover; 
+    grid-column: 2 / span 2;
+    grid-row: 6 / span 4;
 }
 
-.work-item-project.password-generator {
-    grid-column: 4 / span 2;
-    grid-row: 7 / span 3;
-    background-image: url("assets/images/password-generator.jpg");
+.password-generator {
+    background-image: url(../images/password-generator.jpg);
     background-size: 300px 200px, cover;
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-end;
     padding-left: 0px;
     padding-bottom: 15px;
     text-align: left;
-    border: .25vw solid var(--rgba-border-color-opacity);
+    float: top;
+    width: 300px;
+    height: 100px;
+    object-fit: cover; 
+    grid-column: 4 / span 2;
+    grid-row: 7 / span 3;
 }
-
 /* end css/flex for projects */
 
 /* start span code */
@@ -241,16 +262,17 @@ footer a {
     padding-right: 8px;
     line-height: 1.5;
     border-radius: 5%;
-    opacity: .8;
+    opacity: 0.7;
 }
 
 .span-background.title {
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    size: large;
 }
 
 .span-background.opacity {
-    opacity: .95; 
+    opacity: 0.95; 
     font-size: 30px;
 }
 
@@ -270,7 +292,7 @@ footer a {
 .footer-container {
     display: grid;
     width: 80%;
-    grid-template-columns: 1fr repeat(4, 2fr);
+    grid-template-columns: 1fr repeat(3, 2fr);
     grid-template-rows: repeat(3,2fr);
     gap: 20px 20px;
 }
@@ -283,21 +305,25 @@ footer a {
     text-align: right;
     padding-right: 10px;
     padding-top: 10x;
-    border-right: 2px solid var(--lightskyblue);
+    border-right: 2px solid;
+    color: lightskyblue;
     font-size: x-large;
     grid-row: 1 / span 3;
 }
 
 .footer-grid.email {
     grid-row: 2;
+    font-size: large;
 }
 
 .footer-grid.github {
     grid-row: 2;
+    font-size: large;
 }
 
 .footer-grid.linkedin {
     grid-row: 2;
+    font-size: large;
 }
 /* end css/flex footer */
 
@@ -323,32 +349,34 @@ footer a {
     background-attachment: scroll;
  }
 
- .about-me.wrapper {
+ .about-wrapper {
      margin-top: 20px;
  }
 
  .about-grid-container {
-     grid-template-columns: repeat(3, 2fr);
-     grid-template-rows: repeat(5, 1fr);
-     gap: 5px 5px;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 3px;
  }
 
- .about-item.about-me {
+ .about-item.about-title {
      padding-top: 0px;
-     font-size: 25px;
+     font-size: 30px;
      grid-column: 1 / span 3;
      grid-row: 1 / spam 1;
      text-align: center;
      padding-right: 0px;
      padding-bottom: 0px;
      border-right: none;
-     border-bottom: 2px;
+     border-bottom: 0px solid var(--about-me-work-border);  
  }
 
  .about-item.words {
-     padding-top: 5px;
+     padding-top: 25px;
+     font-size: 20px;
      grid-column: 1 span 3;
      grid-row: 2 span 2;
+     padding-bottom: 10px;
  }
 
  .footer-wrapper {
@@ -359,42 +387,173 @@ footer a {
      width: 100%;
      grid-template-columns: repeat(3, 1fr);
      grid-template-rows: repeat(3, 1fr);
-     gap: 2.5px 2.5px;
+     gap: 0px;
  }
 
  .footer-grid.contact-me {
      padding-top: 0px;
-     font-size: 25px;
+     font-size: 30px;
      grid-column: 1 / span 3;
      grid-row: 1 / span 1;
+     border-right: none;
+     border-bottom: 2px solid var(--lightskyblue);
+     padding-left: 30px;
      text-align: center;
      padding-right: 0px;
      padding-bottom: 0px;
-     border-right: none;
-     border-bottom: 2px;
-     padding-left: 25px;
+     
  }
 
  .footer-grid.email {
-     grid-column: 1 / span 1;
-     grid-row: 2 / spam 2;
+     grid-column: 3 / span 2;
+     grid-row: 2 / span 1;
      align-self: center;
      padding-left: 10px;
  }
 
  .footer-grid.github {
-     grid-column: 2 / spam 1;
-     grid-row: 2 / spam 2;
+     grid-column: 3 / span 2;
+     grid-row: 2 / span 1;
      align-self: center;
      padding-left: 25px;
  }
 
  .footer-grid.linkedin {
-     grid-column: 3 / span 1;
-     grid-row: 2 / span 2;
+     grid-column: 3 / span 2;
+     grid-row: 2 / span 1;
      align-self: center;
      width: 20px;
-     padding-left: 80px;
+     padding-left: 75px;
  }
 /* end */
 
+/* media query for tablets */
+@media screen and (max-width: 768px) {
+
+    header a {
+        font-size: 4vw;
+}
+    footer a {
+        font-size: 3vw;
+    }
+
+.nav-effects a:hover {
+    font-size: 3vw;
+}
+
+.footer-container a:hover {
+    font-size: 2vw;
+}
+
+.about-grid-container {
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: 0.5fr repeat(4, 1fr);
+    gap: 5px;
+}
+
+.about-item.about-title {
+    padding-top: 0px;
+    font-size: 25px;
+    grid-column: 2 / span 3;
+    grid-row: 1 / span 1;
+    text-align: center;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    border-right: none;
+    border-bottom: 2px solid var(--about-me-work-border);
+}
+
+.about-item.words{
+    padding-left: 0px;
+}
+.work-wrapper {
+    margin-top: 15px;
+}
+.work-grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.5fr repeat(10, 1fr);
+    gap: 3px;
+}
+
+.work-title {
+    font-size: 30px;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+    text-align: center;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    border-bottom: 2px solid var(--about-me-work-border);
+    border-right: none;
+}
+
+.run-buddy {
+    grid-column: 2 / span 4;
+    grid-row: 8 / span 2;
+    align-items: flex-end;
+    text-align: center;
+    background-position: scroll;
+}
+
+.code-refactor {
+    grid-column: 2 / span 4;
+    grid-row: 8 / span 2;
+    align-items: flex-end;
+    text-align: center;
+    background-position: scroll;
+    padding-top: 25px;
+}
+
+.robot-gladiators {
+    grid-column: 2 /span 4;
+    grid-row: 8 / span 2;
+    padding-top: 30px;
+    background-position: scroll;
+    text-align: center;
+}
+
+.password-generator {
+    grid-column: 2 /span 4;
+    grid-row: 8 / span 2;
+    background-position: scroll;
+    text-align: center;
+}
+/* end */
+
+/* media query for smart phones */
+@media screen and (max-width: 575px) {
+    header a {
+        font-size: 6vw;
+}
+    header nav ul {
+        padding-right: 0px;
+        justify-content: center;
+    }
+
+    header nav ul li {
+        padding: 3px;
+    }
+
+    p {
+        font-size: 5vw;
+    }
+    
+    footer a {
+        font-size: 3.5vw;
+    }
+
+    .nav-effects a:hover {
+        font-size: 5vw;
+    }
+
+    .footer-container {
+        gap: 0px;
+    }
+    .footer-container a:hover {
+        font-size: 4vw;
+    }
+
+    .footer-grid-item.github {
+        padding-left: 40px;
+    }
+}

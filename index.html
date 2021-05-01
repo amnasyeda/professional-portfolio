@@ -9,8 +9,6 @@
 
 <body>
 
-    <section class="wrapper">
-
 <!---- navigation tags start -->
 <header>
        <span class="span-background title">
@@ -44,10 +42,10 @@
 <!-- end hero -->
 
 <!-- short bio starts -->
-<article>
-    <div id="about-me" class="about-me-wrapper">
+<section>
+    <div id="about" class="about-wrapper">
     <div class="about-grid-container">
-    <div class="about-item about-me">
+    <div class="about-item about-title">
           <p> About Me </p>
         </div>
         <div class="about-item words">
@@ -55,52 +53,61 @@
         </div>
     </div>
 </div>
-</article>
+</section>
 <!-- end short bio -->
 
 <!-- projects start -->
-<article>
+<section>
     <div id="work" class="work-wrapper">
     <div class="work-grid-container">
-        <div class="work-item work">
+        <div class="work-item work-title">
           <p> Work </p>
           </div>   
 
         <div onclick="projectClicked('run-buddy')" target="_blank" style="cursor: pointer;">
             <img class="run-buddy" id="run-buddy" src="assets/images/run-buddy.png"
             title="run-buddy" alt="Run Buddy Image">
+            <div class="run-buddy">
             <span class="span-background">
                 <h3>Run Buddy</h3>
         <span class="lower-text">HTML/CSS Basics</span>
         </span>
     </div>
+    </div>
+
     <div onclick="projectClicked('code-refactor')" target="_blank" style="cursor; pointer;">
     <img class="code-refactor" id="code-refactor" src="assets/images/code-refactor.png" alt="Horiseon Page Image" class="code-refactor"
         title="code-refactor">
+        <div class="code-refactor">
          <span class="span-background">
              <h3>Horiseon Web Page</h3>
          <span class="lower-text">HTML/CSS</span>
          </span>
+      </div>
     </div>
     <div onclick="projectClicked('robot-gladiators')" target="_blank" style="cursor: pointer;">
     <img class="robot-gladiators" id="robot-gladiators" src="assets/images/robot-gladiators.jpg" alt="Robot Gladiators Image" class="robot-gladiators"
         title="robot-gladiators">
+        <div class="robot-gladiators">
             <span class="span-background">
             <h3>Robot Gladiators</h3>
             <span class="lower-text">HTML/CSS/Javascript</span>
          </span>
+    </div>
   </div>
   <div onclick="projectClicked('password-generator')" target="_blank" style="cursor: pointer;">
     <img class="password-generator" id="password-generator" src="assets/images/password-generator.jpg" alt="password-generator Image" class="password-generator"
     title="password-generator">
+    <div class="password-generator">
         <span class="span-background">
             <h3>Password Generator: Coming Soon!</h3>
             <span class="lower-text">HTML/CSS/Javascript</span>
         </span>
      </div>
+    </div>
 </div>
 </div>
-</article>
+</section>
 
 <!-- end projects-->
     
