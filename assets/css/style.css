@@ -127,24 +127,24 @@ footer a {
 }
 
 .about-grid-container {
-    width: 90%;
+    width: 80%;
     display: grid;
     grid-template-columns: 1fr repeat(3, 2fr);
     grid-template-rows: repeat(4, 1fr);
-    gap: 5px;
+    gap: 10px 10px;
 }
 
 .about-item.about-title {
     font-size: 35px;
     padding-top: 0px;
     padding-right: 10px;
-    grid-row: 1 / span 3;
-    text-align: left;
+    grid-row: 1 / span 4;
+    text-align: right;
     border-right: 2px solid var(--about-me-work-border);
 }
 
 .about-item.words {
-    padding-left: 15px;
+    padding-left: 10px;
     grid-column: 2 / span 3;
     grid-row: 1 / span 2;
     white-space: normal;
@@ -156,7 +156,7 @@ footer a {
 .work-wrapper {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 55px;
+    margin-top: 40px;
     justify-content: space-between;
     justify-content: center;
 }
@@ -166,17 +166,14 @@ footer a {
     display: grid;
     grid-template-columns: 1fr repeat(3, 2fr);
     grid-template-rows: repeat(10, 1r);
-    gap: 10px;
+    gap: 10px 10px;
 }
 
 .work-title {
-    padding-top: 0px;
+    padding-top: 10px;
     padding-right: 10px;
     font-size: 35px;
     text-align: right;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     border-right: 2px solid var(--about-me-work-border);
     grid-row: 1 / span 9;
 }
@@ -196,8 +193,8 @@ footer a {
     width: 300px;
     height: 100px;
     object-fit: cover; 
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 5;
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 6;
 }
 
 .code-refactor {
@@ -205,7 +202,7 @@ footer a {
     background-size: cover;
     border: .25vw;
     grid-column: 3 / span 2;
-    grid-row: 6 / span 1;
+    grid-row: 7 / span 3;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
@@ -232,7 +229,7 @@ footer a {
     width: 300px;
     height: 100px;
     object-fit: cover; 
-    grid-column: 2 / span 2;
+    grid-column: 2 / span 1;
     grid-row: 6 / span 4;
 }
 
@@ -294,7 +291,7 @@ footer a {
     width: 80%;
     grid-template-columns: 1fr repeat(3, 2fr);
     grid-template-rows: repeat(3,2fr);
-    gap: 20px 20px;
+    gap: 20px;
 }
 
 .footer-grid {
@@ -305,8 +302,7 @@ footer a {
     text-align: right;
     padding-right: 10px;
     padding-top: 10x;
-    border-right: 2px solid;
-    color: lightskyblue;
+    border-right: 2px solid var(--lightskyblue);
     font-size: x-large;
     grid-row: 1 / span 3;
 }
@@ -356,12 +352,12 @@ footer a {
  .about-grid-container {
     grid-template-columns: repeat(3, 2fr);
     grid-template-rows: repeat(5, 1fr);
-    gap: 3px;
+    gap: 5px;
  }
 
  .about-item.about-title {
      padding-top: 0px;
-     font-size: 30px;
+     font-size: 20px;
      grid-column: 1 / span 3;
      grid-row: 1 / spam 1;
      text-align: center;
@@ -387,7 +383,7 @@ footer a {
      width: 100%;
      grid-template-columns: repeat(3, 1fr);
      grid-template-rows: repeat(3, 1fr);
-     gap: 0px;
+     gap: 3px 3px;
  }
 
  .footer-grid.contact-me {
@@ -397,33 +393,32 @@ footer a {
      grid-row: 1 / span 1;
      border-right: none;
      border-bottom: 2px solid var(--lightskyblue);
-     padding-left: 30px;
+     padding-left: 25px;
      text-align: center;
      padding-right: 0px;
-     padding-bottom: 0px;
-     
+     padding-bottom: 0px;  
  }
 
  .footer-grid.email {
-     grid-column: 3 / span 2;
-     grid-row: 2 / span 1;
+     grid-column: 1 / span 1;
+     grid-row: 2 / span 2;
      align-self: center;
      padding-left: 10px;
  }
 
  .footer-grid.github {
-     grid-column: 3 / span 2;
-     grid-row: 2 / span 1;
+     grid-column: 2 / span 1;
+     grid-row: 2 / span 2;
      align-self: center;
      padding-left: 25px;
  }
 
  .footer-grid.linkedin {
-     grid-column: 3 / span 2;
-     grid-row: 2 / span 1;
+     grid-column: 3 / span 1;
+     grid-row: 2 / span 2;
      align-self: center;
      width: 20px;
-     padding-left: 75px;
+     padding-left: 80px;
  }
 /* end */
 
@@ -431,7 +426,7 @@ footer a {
 @media screen and (max-width: 768px) {
 
     header a {
-        font-size: 4vw;
+        font-size: 2vw;
 }
     footer a {
         font-size: 3vw;
@@ -454,12 +449,13 @@ footer a {
 .about-item.about-title {
     padding-top: 0px;
     font-size: 25px;
-    grid-column: 2 / span 3;
+    grid-column: 1 / span 3;
     grid-row: 1 / span 1;
     text-align: center;
     padding-right: 0px;
     padding-bottom: 0px;
     border-right: none;
+    align-self: start;
     border-bottom: 2px solid var(--about-me-work-border);
 }
 
@@ -483,21 +479,22 @@ footer a {
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
+    align-self: start;
     border-bottom: 2px solid var(--about-me-work-border);
     border-right: none;
 }
 
 .run-buddy {
-    grid-column: 2 / span 4;
-    grid-row: 8 / span 2;
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 3;
     align-items: flex-end;
     text-align: center;
     background-position: scroll;
 }
 
 .code-refactor {
-    grid-column: 2 / span 4;
-    grid-row: 8 / span 2;
+    grid-column: 1 / span 3;
+    grid-row: 5 / span 3;
     align-items: flex-end;
     text-align: center;
     background-position: scroll;
@@ -505,16 +502,16 @@ footer a {
 }
 
 .robot-gladiators {
-    grid-column: 2 /span 4;
-    grid-row: 8 / span 2;
+    grid-column: 1 /span 3;
+    grid-row: 7 / span 1;
     padding-top: 30px;
     background-position: scroll;
     text-align: center;
 }
 
 .password-generator {
-    grid-column: 2 /span 4;
-    grid-row: 8 / span 2;
+    grid-column: 1 /span 3;
+    grid-row: 7 / span 1;
     background-position: scroll;
     text-align: center;
 }
