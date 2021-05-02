@@ -15,7 +15,7 @@ If link does not work, please click here: https://amnasyeda.github.io/profession
 Please note that the link above is not for a functional website and is only for grading purposes for this program. 
 
 Webpage Screenshot on standard internet browser and laptop/desktop: 
-![alt text] url(../images/desktop-laptop.png);
+https://raw.githubusercontent.com/amnasyeda/professional-portfolio/develop/assets/images/desktop-laptop.png
 
 iPad/Tablet:
 ![Screenshot]: url(../images/iPad.png);
