@@ -4,14 +4,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    --rgba-border-color-opacity: rgba(135, 206, 250, 0.8);
-    --about-me-work-border: #333366;
-    --lightskyblue: lightskyblue;
-    --lightgray: lightgray;
-    --header-footer-background-color: #404040;
-  }
-
 /* header start */
 header {
     display: flex; 
