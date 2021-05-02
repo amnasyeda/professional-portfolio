@@ -7,8 +7,8 @@
 
 /* root design */
 :root {
-    --about-me-work-border: #333366;
-    --lightskyblue: lightskyblue;
+    --about-me-work-border: rgb(13, 13, 114);
+    --aquablue: rgb(115, 178, 194);
 }
 
 /* header start */
@@ -47,7 +47,7 @@ header a {
     padding-right: 20px;
     padding-bottom: 5px;
     border-bottom: 2px;
-    color: lightskyblue;
+    color: var(--aquablue);
 }
 /* end header*/
 
@@ -60,12 +60,12 @@ body {
 
 /* start footer */
 footer {
-    background-color: rgb(67, 75, 83);
-    color: lightskyblue;
+    background-color: rgb(188, 189, 204);
+    color: rgb(13, 13, 114);
 }
 
 footer a {
-    color: lightskyblue;
+    color: rgb(13, 13, 114);
     font-size: x-large; 
     font-weight: bold;
     text-decoration: none;
@@ -98,7 +98,7 @@ footer a {
 /* start nav hover */
 .nav-effects a:hover {
     text-shadow: 0px 20px;
-    color: lightskyblue;
+    color: var(--aquablue);
     font-weight: bold;
 }
 /* end nav hover */
@@ -111,8 +111,8 @@ footer a {
 
 /* footer hover */
 .footer-container a:hover {
-    color: lightskyblue;
-    text-shadow: 0px 0px 20px var(--lightskyblue);
+    color: var(--aquablue);
+    text-shadow: 0px 0px 20px var(--aquablue);
     font-weight: bold;
 }
 /* end footer hover */
@@ -136,6 +136,8 @@ footer a {
 
 .about-item.about-title {
     font-size: 35px;
+    color: rgb(13, 13, 114);
+    font-weight: bold;
     padding-top: 0px;
     padding-right: 10px;
     grid-row: 1 / span 9;
@@ -144,6 +146,7 @@ footer a {
 }
 
 .about-item.words {
+    color: rgb(13, 13, 114);
     padding-left: 10px;
     grid-column: 2 / span 3;
     grid-row: 1 / span 2;
@@ -179,6 +182,8 @@ p {
 }
 
 .work-title {
+    color: rgb(13, 13, 114);
+    font-weight: bold;
     padding-top: 0px;
     padding-right: 10px;
     font-size: 35px;
@@ -263,7 +268,7 @@ p {
 
 /* start span code */
 .span-background {
-    background-color: lightskyblue;
+    background-color: var(--aquablue);
     position: relative;
     padding-left: 8px;
     padding-right: 8px;
@@ -307,29 +312,39 @@ p {
 
 .footer-grid {
     text-align: center;
-    min-height: calc (50vh - 50px);
+    min-height: calc(5vh - 10px);
 }
 
 .footer-grid.contact-me {
     text-align: right;
     padding-right: 20px;
     padding-top: -100px;
-    border-right: 2px solid var(--lightskyblue);
-    grid-row: 1 / span 9;
+    border-right: 2px solid rgb(13, 13, 114);
+    grid-row: 3 / span 9;
     box-shadow: none;
-    font-size: x-large;
+    font-size: 30px;
+    font-weight: bold; 
 }
 
 .footer-grid.email {
     grid-row: 1.5;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-underline-offset: 8px;
 }
 
 .footer-grid.github {
     grid-row: 1.5;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-underline-offset: 8px;
 }
 
 .footer-grid.linkedin {
     grid-row: 1.5;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-underline-offset: 8px;
 }
 /* end css/flex footer */
 
@@ -375,7 +390,7 @@ p {
      padding-right: 0px;
      padding-bottom: 0px;
      border-right: none;
-     border-bottom: 0px solid var(--about-me-work-border);  
+     border-bottom: 2px solid rgb(13, 13, 114);  
  }
 
  .about-item.words {
@@ -383,13 +398,11 @@ p {
      font-size: 15px;
      grid-column: 1 span 3;
      grid-row: 2 span 2;
-     padding-bottom: -100px;
-     margin-bottom: -180px; 
+     margin-bottom: -600px; 
  }
 
  .work-title {
    margin-top: -100px;
-   padding-top: -100px; 
  }
 
  .run-buddy {
@@ -450,7 +463,7 @@ p {
      grid-column: 1 / span 3;
      grid-row: 1 / span 1;
      border-right: none;
-     border-bottom: 2px solid var(--lightskyblue);
+     border-bottom: 2px solid rgb(13, 13, 114);
      padding-left: 25px;
      padding-right: 0px;
      padding-bottom: 0px; 
@@ -513,15 +526,19 @@ p {
     padding-bottom: 0px;
     border-right: none;
     align-self: start;
-    border-bottom: 2px solid var(--about-me-work-border);
+    border-bottom: 2px solid rgb(13, 13, 114);
+    margin-bottom: 50px; 
 }
 
 .about-item.words{
-    padding-left: 0px;
+    padding-left: -500px;
+    margin-left: -200px; 
 }
+
 .work-wrapper {
     margin-top: 15px;
 }
+
 .work-grid-container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 0.5fr repeat(10, 1fr);
@@ -530,14 +547,14 @@ p {
 
 .work-title {
     font-size: 30px;
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 5;
     grid-row: 1 / span 1;
     text-align: center;
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
     align-self: start;
-    border-bottom: 2px solid var(--about-me-work-border);
+    border-bottom: 2px solid rgb(13, 13, 114);
     border-right: none;
 }
 
@@ -574,6 +591,8 @@ p {
 }
 .footer-wrapper {
     margin-top: 10px;
+    margin-bottom: -30px; 
+    min-height: calc(1000vh-100px);
 }
 /* end */
 
@@ -603,15 +622,25 @@ p {
     .nav-effects a:hover {
         font-size: 5vw;
     }
+    
+    .about-item.words {
+        margin-left: -90px; 
+        font-size: medium; 
+        margin-bottom: -390px; 
+    }
+
+   .password-generator {
+       margin-bottom: -45px; 
+   }
 
     .footer-container {
-        gap: 0px 0px;
+        gap: -150px;
     }
     .footer-container a:hover {
         font-size: 4vw;
     }
 
     .footer-grid-item.linkedin {
-        padding-left: 40px;
+        margin-left: 100px;
     }
 }
