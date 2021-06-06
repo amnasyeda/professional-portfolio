@@ -2,29 +2,31 @@
 <html lang="en">
 <head>    
     <meta charset="UFT-8">
-    <meta name ="viewport" content="width"=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Amna Syeda's Portfolio</title>
 </head>
-<body>
 
-    <section class="wrapper">
+<body>
 
 <!---- navigation tags start -->
 <header>
-       <div class="background-image">
+       <span class="span-background title">
             <h1> Amna Syeda </h1>
-     </div>
+       </span>
         <nav>
             <ul class="nav-effects">
                 <li>
-                    <a href="#about-me">About Me</a>
+                    <a href="#about-me"> About Me </a>
                 </li>
                 <li>
-                    <a href="#work">Work</a>
+                    <a href="#work"> Work </a>
                 </li>
                 <li>
-                    <a href="#contact-me">Contact Me</a>
+                    <a href="#contact-me"> Contact Me </a>
+                </li>
+                <li>
+                    <a href="assets/AMNA SYEDA.docx"> Resume </a>
                 </li>
              </ul>
         </nav>
@@ -33,21 +35,23 @@
 
 <!-- hero section starts -->
  <section class="hero">
-    <div class="hero-image">
-        <span class="span-baclground opacity">Welcome!</span>
+    <div class="hero-message">
+        <span class="span-background opacity">Welcome to my Portfolio! / Bienvenue à mon portfolio! </span>
    </div>
  </section>
 <!-- end hero -->
 
 <!-- short bio starts -->
 <section>
-    <div class="about-me-grid-container">
-    <div class="about-me-title">
-      <div id="about-me" class="about-me-wrapper">
-          <h3>About Me</h3>
+    <div id="about-me" class="about-wrapper">
+    <div class="about-grid-container">
+    <div class="about-item about-title">
+          <p> About Me </p>
         </div>
-        <div class="about-me">
-            <p>something about me which i'll edit later.</p>
+        <div class="about-item words">
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+            </p>
         </div>
     </div>
 </div>
@@ -56,63 +60,76 @@
 
 <!-- projects start -->
 <section>
+    <div id="work" class="work-wrapper">
     <div class="work-grid-container">
-    <div class="work-title">
-      <div id="work" class="work-wrapper">
-          <h3>Work</h3>
+        <div class="work-item work-title">
+          <p> Work </p>
           </div>   
-        <div onclick="projectClicked('run-buddy')" alt="Run Buddy Image" class="run-buddy"
-            title="Run Buddy Page" target="_blank" style="cursor: pointer;">
+
+          <div class="work-item run-buddy">
+                <a href="https://amnasyeda.github.io/run-buddy/" target="_blank">
+            <div class="run-buddy">
+            <span class="span-background">
                 <h3>Run Buddy</h3>
-        <span class="background">
         <span class="lower-text">HTML/CSS Basics</span>
         </span>
     </div>
+</div>
 
-    <div onclick="projectClicked('code-refactor')" alt="Horiseon Page Image" class="code-refactor"
-         title="code-refactor" style="cursor; pointer;">
+    <div class="work-item code-refactor">
+            <a href="https://amnasyeda.github.io/code-refactor/" target="_blank">
+        <div class="code-refactor">
+         <span class="span-background">
              <h3>Horiseon Web Page</h3>
-         <span class="background">
          <span class="lower-text">HTML/CSS</span>
          </span>
+      </div>
     </div>
 
-    <div onclick="projectClicked('robot-gladiators')" alt="Robot Gladiators Image" class="robot-gladiators"
-        title="robot-gladiators" style="cursor: pointer;">
+    <div class="work-item robot-gladiators">
+            <a href="http://amnasyeda.github.io/robot-gladiators/" target="_blank">
+        <div class="robot-gladiators">
+            <span class="span-background">
             <h3>Robot Gladiators</h3>
-        <span class="background">
             <span class="lower-text">HTML/CSS/Javascript</span>
-        </span>
+         </span>
+    </div>
   </div>
 
-  <div onclick="projectClicked('project01-calorie-tracker')" alt="Calorie Tracker Image" class="calorie-tracker"
-  title="calorie-tracker" style="cursor: pointer;">
-      <h3>Calorie Tracker</h3>
-  <span class="background">
-      <span class="lower-text">HTML/CSS/Javascript/Web APIs</span>
-  </span>
-</div>
-
-</div>
-
+  <div class="work-item calorie-tracker">
+            <a href="https://uot-project-grp.github.io/project01-calorie-tracker/" target="_blank">
+        <div class="calorie-tracker">
+        <span class="span-background">
+            <h3>Calorie Tracker: A Group Projecr</h3>
+            <span class="lower-text">HTML/CSS/Javascript/Web APIs</span>
+        </span>
+     </div>
+    </div>
 </section>
 
 <!-- end projects-->
     
 <!-- footer -->
+
 <footer>
-  <div class="footer-container">
     <div id="contact-me" class="footer-wrapper">
-    <div class="footer-grid-item contact-me">
+     <div class="footer-container">
+     <div class="footer-grid contact-me">
         <h3>Contact Me</h3>
     </div>
-            <li><strong>Email:</strong> <a href="#">myemail@gmail.com</a></li>
-            <li><strong>Github:</strong> <a href="#">my Github username</a></li>
-            <li>
-                <strong>LinkedIn</strong> <a href="#">my LinkedIn profile</a>
-            </li>
+    <div class="footer-grid email">
+        <a href="amna.syeda98@gmail.com" class="nav-effects" target="_blank">E-mail</a>
+        </div>
+    <div class="footer-grid github">
+        <a href="https://github.com/amnasyeda" target="_blank">GitHub</a>
+        </div>
+    <div class="footer-grid linkedin">
+        <a href="https://ca.linkedin.com/in/amna-syeda-064191146" target="_blank">LinkedIn</a>
+        </div>
     </div>
-</div>
+</div>  
 </footer>
 <!-- end footer -->
 
+</body>
+</html>
