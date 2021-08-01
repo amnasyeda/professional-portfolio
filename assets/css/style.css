@@ -230,8 +230,8 @@ p {
     grid-row: 1 / span 6;
 }
 
-.robot-gladiators {
-    background-image: url(../images/robot-gladiators.jpg);
+.calorie-tracker {
+    background-image: url(../images/calorie-tracker.png);
     background-size: cover;
     border: .25vw;
     display: flex;
@@ -248,9 +248,9 @@ p {
     grid-row: 6 / span 4;
 }
 
-.calorie-tracker {
-    background-image: url(../images/calorie-tracker.png);
-    background-size: 300px 200px, cover;
+.waste-management {
+    background-image: url(../images/wasteaway.png);
+    background-size: cover;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
@@ -261,7 +261,7 @@ p {
     width: 300px;
     height: 100px;
     object-fit: cover; 
-    grid-column: 3 / span 1;
+    grid-column: 4 / span 1;
     grid-row: 6 / span 4;
 }
 /* end css/flex for projects */
@@ -423,7 +423,7 @@ p {
     background-position: scroll;
 }
 
-.robot-gladiators {
+.calorie-tracker{
     margin-top: -110px; 
     margin-bottom: 0px; 
     grid-column: 4 /span 2;
@@ -433,7 +433,7 @@ p {
     text-align: center;
 }
 
-.calorie-tracker {
+.waste-management {
     margin-top: 15px; 
     margin-bottom: -40px; 
     grid-column: 4 /span 5;
@@ -575,7 +575,7 @@ p {
     padding-top: 25px;
 }
 
-.robot-gladiators {
+.calorie-tracker {
     grid-column: 1 /span 3;
     grid-row: 7 / span 1;
     padding-top: 30px;
@@ -583,7 +583,7 @@ p {
     text-align: center;
 }
 
-.calorie-tracker {
+.waste-management {
     grid-column: 1 /span 3;
     grid-row: 7 / span 1;
     background-position: scroll;
